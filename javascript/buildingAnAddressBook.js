@@ -1,3 +1,5 @@
+'use strict';
+
 var bob = {
     firstName: "Bob",
     lastName: "Jones",
@@ -16,7 +18,7 @@ var contacts = [bob, mary];
 
 function addContact(firstName, lastName, phoneNumber, email) {
 
-	var newContact= {
+	var newContact = {
 	firstName: firstName,
 	lastName: lastName,
 	phoneNumber: phoneNumber,
@@ -25,7 +27,7 @@ function addContact(firstName, lastName, phoneNumber, email) {
 
 	contacts[contacts.length] = newContact;
 
-};
+}
 
 addContact("Davey", "Brett","555 555 5555", "bigDaveb@example.com");
 
