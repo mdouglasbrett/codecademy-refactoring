@@ -14,26 +14,33 @@ var mary = {
 
 var contacts = [bob, mary];
 
-add = function(firstName, lastName, phoneNumber, email) {
-var newContact= {
-firstName: firstName,
-lastName: lastName,
-phoneNumber: phoneNumber,
-email: email
-};
-contacts[contacts.length] = newContact;
+function addContact(firstName, lastName, phoneNumber, email) {
+
+	var newContact= {
+	firstName: firstName,
+	lastName: lastName,
+	phoneNumber: phoneNumber,
+	email: email
+	};
+
+	contacts[contacts.length] = newContact;
+
 };
 
-add("Davey", "Brett","555 555 5555", "bigDaveb@example.com");
+addContact("Davey", "Brett","555 555 5555", "bigDaveb@example.com");
 
 function printPerson(person) {
+
     console.log(person.firstName + " " + person.lastName);
+
 }
 
 function list() {
-	var contactsLength = contacts.length;
-	for (var i = 0; i < contactsLength; i++) {
+
+	for (var i = 0; i < contacts.length; i++) {
+		
 		printPerson(contacts[i]);
+
 	}
 }
 list()
